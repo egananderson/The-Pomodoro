@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		EB1604FD1B01519C00E3BFCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1604FC1B01519C00E3BFCA /* main.m */; };
 		EB1605001B01519C00E3BFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1604FF1B01519C00E3BFCA /* AppDelegate.m */; };
-		EB1605031B01519C00E3BFCA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605021B01519C00E3BFCA /* FirstViewController.m */; };
-		EB1605061B01519C00E3BFCA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605051B01519C00E3BFCA /* SecondViewController.m */; };
+		EB1605031B01519C00E3BFCA /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605021B01519C00E3BFCA /* TimerViewController.m */; };
+		EB1605061B01519C00E3BFCA /* RoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605051B01519C00E3BFCA /* RoundsViewController.m */; };
 		EB1605091B01519C00E3BFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1605071B01519C00E3BFCA /* Main.storyboard */; };
 		EB16050B1B01519C00E3BFCA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB16050A1B01519C00E3BFCA /* Images.xcassets */; };
 		EB16050E1B01519C00E3BFCA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB16050C1B01519C00E3BFCA /* LaunchScreen.xib */; };
 		EB16051A1B01519C00E3BFCA /* PomodoroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605191B01519C00E3BFCA /* PomodoroTests.m */; };
+		EB1605251B0153A400E3BFCA /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605241B0153A400E3BFCA /* Timer.m */; };
+		EB1605281B0153EB00E3BFCA /* Rounds.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605271B0153EB00E3BFCA /* Rounds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +35,20 @@
 		EB1604FC1B01519C00E3BFCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB1604FE1B01519C00E3BFCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB1604FF1B01519C00E3BFCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB1605011B01519C00E3BFCA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		EB1605021B01519C00E3BFCA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		EB1605041B01519C00E3BFCA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		EB1605051B01519C00E3BFCA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		EB1605011B01519C00E3BFCA /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		EB1605021B01519C00E3BFCA /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		EB1605041B01519C00E3BFCA /* RoundsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundsViewController.h; sourceTree = "<group>"; };
+		EB1605051B01519C00E3BFCA /* RoundsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundsViewController.m; sourceTree = "<group>"; };
 		EB1605081B01519C00E3BFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB16050A1B01519C00E3BFCA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EB16050D1B01519C00E3BFCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EB1605131B01519C00E3BFCA /* PomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1605181B01519C00E3BFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1605191B01519C00E3BFCA /* PomodoroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PomodoroTests.m; sourceTree = "<group>"; };
+		EB1605231B0153A400E3BFCA /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		EB1605241B0153A400E3BFCA /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		EB1605261B0153EB00E3BFCA /* Rounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rounds.h; sourceTree = "<group>"; };
+		EB1605271B0153EB00E3BFCA /* Rounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rounds.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +92,14 @@
 			children = (
 				EB1604FE1B01519C00E3BFCA /* AppDelegate.h */,
 				EB1604FF1B01519C00E3BFCA /* AppDelegate.m */,
-				EB1605011B01519C00E3BFCA /* FirstViewController.h */,
-				EB1605021B01519C00E3BFCA /* FirstViewController.m */,
-				EB1605041B01519C00E3BFCA /* SecondViewController.h */,
-				EB1605051B01519C00E3BFCA /* SecondViewController.m */,
+				EB1605011B01519C00E3BFCA /* TimerViewController.h */,
+				EB1605021B01519C00E3BFCA /* TimerViewController.m */,
+				EB1605041B01519C00E3BFCA /* RoundsViewController.h */,
+				EB1605051B01519C00E3BFCA /* RoundsViewController.m */,
+				EB1605231B0153A400E3BFCA /* Timer.h */,
+				EB1605241B0153A400E3BFCA /* Timer.m */,
+				EB1605261B0153EB00E3BFCA /* Rounds.h */,
+				EB1605271B0153EB00E3BFCA /* Rounds.m */,
 				EB1605071B01519C00E3BFCA /* Main.storyboard */,
 				EB16050A1B01519C00E3BFCA /* Images.xcassets */,
 				EB16050C1B01519C00E3BFCA /* LaunchScreen.xib */,
@@ -224,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1605061B01519C00E3BFCA /* SecondViewController.m in Sources */,
+				EB1605251B0153A400E3BFCA /* Timer.m in Sources */,
+				EB1605061B01519C00E3BFCA /* RoundsViewController.m in Sources */,
+				EB1605281B0153EB00E3BFCA /* Rounds.m in Sources */,
 				EB1605001B01519C00E3BFCA /* AppDelegate.m in Sources */,
-				EB1605031B01519C00E3BFCA /* FirstViewController.m in Sources */,
+				EB1605031B01519C00E3BFCA /* TimerViewController.m in Sources */,
 				EB1604FD1B01519C00E3BFCA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface RoundsViewController : UIViewController
+
+-(void) roundSelected;
+-(void) roundComplete;
 
 
 @end
