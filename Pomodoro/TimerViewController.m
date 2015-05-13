@@ -29,23 +29,20 @@
 -(void) dealloc{
     [self unregisterForNotifications];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
   [self registerForNotifications];
     if (![Rounds sharedInstance].currentRound) {
         [Timer sharedInstance].minutes = [[[Rounds sharedInstance] getRoundTimes][0] integerValue];
         [Timer sharedInstance].seconds = 0;
-        NSString *initialRound = [NSString stringWithFormat:@"%ld:0%ld",(long)[Timer sharedInstance].minutes,(long)[Timer sharedInstance].seconds];
-        self.timerLabel.text = initialRound;
+        [self updateTimer];
     }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)startTimer:(id *)sender {
-    
 }
 
 -(void) updateTimer{
@@ -55,21 +52,18 @@
     NSString *timer;
     
     if (seconds <10) {
-        timer = [NSString stringWithFormat:@"%d:0%d",minutes,seconds];
+        timer = [NSString stringWithFormat:@"%li:0%li",(long)minutes,(long)seconds];
     }
     
     else {
-        timer = [NSString stringWithFormat:@"%d:%d",minutes,seconds];
+        timer = [NSString stringWithFormat:@"%li:%li",(long)minutes,(long)seconds];
     }
-    NSLog(@"%@",timer);
     self.timerLabel.text = timer;
-    
 }
 
 -(void) newRound{
     [self updateTimer];
     self.startButton.enabled = YES;
-    
 }
 
 
@@ -94,11 +88,11 @@
 -(void) unregisterForNotifications{
       NSNotificationCenter* nc = [NSNotificationCenter defaultCenter];
     [nc removeObserver:self];
-    
 }
+
 - (IBAction)timerButtonPressed:(id)sender {
     self.startButton.enabled = NO;
     [[Timer sharedInstance] startTimer];
-    
 }
+
 @end

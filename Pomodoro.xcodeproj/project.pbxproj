@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5583AB061B02EAA900EF3B54 /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5583AB051B02EAA900EF3B54 /* AppearanceController.m */; };
 		EB1604FD1B01519C00E3BFCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1604FC1B01519C00E3BFCA /* main.m */; };
 		EB1605001B01519C00E3BFCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1604FF1B01519C00E3BFCA /* AppDelegate.m */; };
 		EB1605031B01519C00E3BFCA /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1605021B01519C00E3BFCA /* TimerViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5583AB041B02EAA900EF3B54 /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceController.h; sourceTree = "<group>"; };
+		5583AB051B02EAA900EF3B54 /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceController.m; sourceTree = "<group>"; };
 		EB1604F71B01519C00E3BFCA /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1604FB1B01519C00E3BFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1604FC1B01519C00E3BFCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				EB1604FF1B01519C00E3BFCA /* AppDelegate.m */,
 				EB1605011B01519C00E3BFCA /* TimerViewController.h */,
 				EB1605021B01519C00E3BFCA /* TimerViewController.m */,
+				5583AB041B02EAA900EF3B54 /* AppearanceController.h */,
+				5583AB051B02EAA900EF3B54 /* AppearanceController.m */,
 				EB1605041B01519C00E3BFCA /* RoundsViewController.h */,
 				EB1605051B01519C00E3BFCA /* RoundsViewController.m */,
 				EB1605231B0153A400E3BFCA /* Timer.h */,
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5583AB061B02EAA900EF3B54 /* AppearanceController.m in Sources */,
 				EB1605251B0153A400E3BFCA /* Timer.m in Sources */,
 				EB1605061B01519C00E3BFCA /* RoundsViewController.m in Sources */,
 				EB1605281B0153EB00E3BFCA /* Rounds.m in Sources */,
@@ -436,6 +442,7 @@
 				EB16051F1B01519C00E3BFCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB1605201B01519C00E3BFCA /* Build configuration list for PBXNativeTarget "PomodoroTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +451,7 @@
 				EB1605221B01519C00E3BFCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
