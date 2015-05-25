@@ -8,9 +8,11 @@
 
 #import "Timer.h"
 #import "RoundsViewController.h"
+@import UIKit;
 
 @interface Timer ()
 @property (nonatomic,assign) BOOL isOn;
+@property (nonatomic, strong)NSDate *experationDate;
 
 
 @end
@@ -20,6 +22,22 @@
 -(void) startTimer{
     self.isOn = YES;
     [self checkActive];
+    
+    self.experationDate = [[NSDate new] dateByAddingTimeInterval:(self.minutes *60)];
+    
+    UILocalNotification *localNotification = [UILocalNotification new];
+    
+    localNotification.fireDate = self.experationDate;
+    
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    
+    localNotification.soundName = @"bell_tree.mp3";
+    
+    localNotification.alertBody = @"Time is up!";
+    localNotification.alertTitle = @"Time!";
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
 }
 
 -(void) endTimer{
@@ -56,6 +74,9 @@
 -(void) cancelTimer{
     self.isOn = NO;
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
+    
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
 }
 
 + (instancetype)sharedInstance{
@@ -69,5 +90,26 @@
     
     return sharedInstance;
 }
+
+-(void) prepareForBackground{
+    
+    [[NSUserDefaults standardUserDefaults] setObject:self.experationDate forKey:experationDate];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+
+-(void) loadFromBackground{
+    
+    self.experationDate = [[NSUserDefaults standardUserDefaults]objectForKey:experationDate];
+    
+    NSTimeInterval seconds =[self.experationDate timeIntervalSinceNow];
+    
+    self.minutes = seconds / 60;
+    
+    self.seconds = seconds - (self.minutes *60);
+    
+}
+
 
 @end
